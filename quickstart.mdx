@@ -1,80 +1,58 @@
 ---
 title: "Quickstart"
-description: "Start building awesome documentation in minutes"
+description: "Determine your role"
 ---
 
-## Get started in three steps
+## Main Roles
 
-Get your documentation site running locally and make your first customization.
+All roles can be setup in the same user account. However providing funding for traders need to be approved by management.
 
-### Step 1: Set up your local environment
+### Trader
 
 <AccordionGroup>
-  <Accordion icon="copy" title="Clone your docs locally">
-    During the onboarding process, you created a GitHub repository with your docs content if you didn't already have one. You can find a link to this repository in your [dashboard](https://dashboard.mintlify.com).
-    
-    To clone the repository locally so that you can make and preview changes to your docs, follow the [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) guide in the GitHub docs.
+  <Accordion title="Evaluation (Eval)" icon="check-double">
+    You can join a trading pod and start using capital provided by pod managers, there are 3 tiers you can choose from, normally you would start with tier 1, other tiers are upgradable from previous tier so you don't have to pay the full tier price.
+
+    After you pay the eval fee of the tier you selected, you can then subscribe to any available pods within that tier and immediately use the funds within each pod to start trading.
+
+    ## Tiers
+
+    1. This tier has the largest loss buffer to give you room for trading error, that is why as a beginner, you should always start here. As this tier is the most risky for pod managers this is why profit sharing is normally in their favour.
+    2. The second tier provides little to no loss buffer but gives the trader more share of the profit, this tier is upgradable by management who oversees all trading activities, when you show enough evidence of a profitable trader, you will be automatically upgraded.
+    3. The final tier, pod managers of this tier provide no loss buffer but give you an attractive profit share, it is upgradable from tier 2.
   </Accordion>
-  <Accordion icon="rectangle-terminal" title="Start the preview server">
-    1. Install the Mintlify CLI: `npm i -g mint`
-    2. Navigate to your docs directory and run: `mint dev`
-    3. Open `http://localhost:3000` to see your docs live!
-    
-    <Tip>Your preview updates automatically as you edit files.</Tip>
+  <Accordion title="Eval credit" icon="credit-card-blank">
+    The first time you buy a tier status (in this example, tier 1), you by default get a -3000 USDT equivalent in loss credit, which means if the total loss you generated through trading surpasses 3000 USDT, your tier status will be revoked. You can always repurchase but it is recommended that you improve your trading style before continuing.
+
+    You can find someone that has our referral code when you buy, which usually will give you more credit, sometimes up to -8000 on top of the default credit, depending on the person's own referral level.
   </Accordion>
 </AccordionGroup>
 
-### Step 2: Deploy your changes
+### Fund Provider (Pod Manager)
 
 <AccordionGroup>
-  <Accordion icon="github" title="Install our GitHub app">
-    Install the Mintlify GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app).
-    
-    Our GitHub app automatically deploys your changes to your docs site, so you don't need to manage deployments yourself.
-</Accordion>
-<Accordion icon="palette" title="Update your site name and colors">
-    For a first change, let's update the name and colors of your docs site.
+  <Accordion title="What is pod manager" icon="album-collection-circle-user">
+    Pod manager is like a fund manager, you provide funding for traders, and get a profit split when a trade is profitable. But you will actively check whether or not a trading session is complete so that you can adjust your funds on your exchange accounts, get fee rebates and do some accouting by transfering funds from and to levito.app and exchanges.
 
-    1. Open `docs.json` in your editor.
-    2. Change the `"name"` field to your project name.
-    3. Update the `"colors"` to match your brand.
-    4. Save and see your changes instantly at `http://localhost:3000`.
+    ### When in loss
 
-    <Tip>Try changing the primary color to see an immediate difference!</Tip>
+    Traders provide the first-loss capital in form of security deposit, just like on any other exchanges, when a trade incurrs loss, their security deposit will cover that loss first, any additional loss after that is covered by a backend automated trade hedging system that constantly monitors all trading activities and hedge bets accordingly.
+
+    ### How to fund
+
+    Funding has two aspects, 1) is you deposit funds, usually a little bit more than the promised funding amount in your exchange trading accounts. 2) then you deposit the same amount in your levito.app account. This way when traders have profit, the system can immediately transfer this fund over to traders when accounting is complete.
+
+    ### How to apply
+
+    Currently we are not open to outside investors as we have internal investors who can cover the initial investment, as clients grow, we are sure to open for public funding. But always drop us a proposal.
   </Accordion>
 </AccordionGroup>
 
-### Step 3: Go live
+### Affiliate Program Participants
 
-<Accordion icon="rocket" title="Publish your docs">
-  1. Commit and push your changes.
-  2. Your docs will update and be live in moments!
+<Accordion title="Earn fees" icon="dollar-sign">
+  Anyone can participate in our affiliate program, here are the fees you can earn.
+
+  1. Eval fee, up to 50%, when a trader buys eval by using your referral code, they get an addtional loss credit (coverage), you get 50% of what they pay as soon as payment is processed.
+  1. You also get a percentage of their trading fee up to 8% depending on level of your referral account. 
 </Accordion>
-
-## Next steps
-
-Now that you have your docs running, explore these key features:
-
-<CardGroup cols={2}>
-
-<Card title="Write Content" icon="pen-to-square" href="/essentials/markdown">
-  Learn MDX syntax and start writing your documentation.
-</Card>
-
-<Card title="Customize style" icon="palette" href="/essentials/settings">
-  Make your docs match your brand perfectly.
-</Card>
-
-<Card title="Add code examples" icon="square-code" href="/essentials/code">
-  Include syntax-highlighted code blocks.
-</Card>
-
-<Card title="API documentation" icon="code" href="/api-reference/introduction">
-  Auto-generate API docs from OpenAPI specs.
-</Card>
-
-</CardGroup>
-
-<Note>
-  **Need help?** See our [full documentation](https://mintlify.com/docs) or join our [community](https://mintlify.com/community).
-</Note>
