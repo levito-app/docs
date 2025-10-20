@@ -26,6 +26,48 @@ All roles can be setup in the same user account. However providing funding for t
 
     You can find someone that has our referral code when you buy, which usually will give you more credit, sometimes up to -8000 on top of the default credit, depending on the person's own referral level.
   </Accordion>
+  <Accordion title="Exchanges & Trading Symbols" icon="bitcoin-sign">
+    Levito.app offers two centralized exchanges: 1) Binance, 2) OKX, for executing trades, but it can also depend on what exchanges pod managers use.
+
+    ### Trading Symbols
+
+    We are actively adding and removing symbols based on their risk profile, any trading symbol that may incur huge funding fee will not be included here.
+  </Accordion>
+  <Accordion title="Fees" icon="credit-card">
+    Basically you pay fees as you would on normally on any other exchanges.
+
+    ### Trading Fee
+
+    This fee is deducted from your margin amount and returned to pod manager to cover their side of fee. Because you are essentially using their trading account.
+
+    ### Funding Fee
+
+    Funding fee, if applicable, will be combined with trading fee, as funding fee could be negative or positive.
+
+    ### Liquidation Fee
+
+    Exchanges charge liquidation fee, normally 1.5% \* leverage, we do not charge this fee.
+
+    ### Eval Fee
+
+    This is charged when you purchase a tier status, it covers a predefined loss amount, which will be used to hedge any potential losing position automatically to cover any additional loss beyond your margin amount.
+  </Accordion>
+  <Accordion title="Margin" icon="dollar-sign">
+    You will need to put up a margin amount required by specific pod, this is called first-loss capital, where in case of a loss, you will cover that risk fully with your capital, or any additional loss buffer your pod manager offers. 
+
+    There is no maintenance margin required as it is covered by pod manager in order to maximize your utilization of available margin.
+  </Accordion>
+  <Accordion title="Tokenizing your trade" icon="arrow-down-up-lock">
+    You can tokenize your trade, in such a case, your trade is locked in an agreement with public investors/traders who can contribute to your margin size, further boosting your fund utilization and profit, at the same time reducing your loss to only your margin amount.
+
+    After placing such a trade, your trade will show up within 30 minutes so that investors/traders can participate (do not require tier status), they can long and short your trade, betting on whether your trade will reach take profit target or liquidation level. 
+
+    The more people you can attract to contribute, the more profit potential you command, the less risk you take with respect to public margin that is allocated to you, and you also collect the trading fee.
+
+    <Note>
+      Locked in an agreement means you can not set stop loss, only take profit, the stop is your liquidation level, you won't be able to change this fact, unless people invest in your trade which can push liquidation further depending on size of trade.
+    </Note>
+  </Accordion>
 </AccordionGroup>
 
 ### Fund Provider (Pod Manager)
