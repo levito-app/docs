@@ -21,6 +21,12 @@
               "terms",
               "privacy"
             ]
+          },
+          {
+            "group": "Tokenized Trades",
+            "pages":[
+              "tokenize/tokenization"
+            ]
           }
         ]
       }
