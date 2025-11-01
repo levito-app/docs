@@ -28,6 +28,12 @@
               "/trading/funding",
               "/trading/tokenization"
             ]
+          },
+          {
+            "group": "Funding",
+            "pages":[
+              "/funding/provider"
+            ]
           }
         ]
       }
