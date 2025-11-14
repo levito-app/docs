@@ -32,7 +32,8 @@
           {
             "group": "Funding",
             "pages":[
-              "/funding/provider"
+              "/funding/provider",
+              "/funding/staking"
             ]
           }
         ]
