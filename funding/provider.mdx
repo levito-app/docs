@@ -5,15 +5,25 @@ description: "Provide funding for leveraged trading operations on supported exch
 
 ### Risks
 
-Providing funding for traders carries risks, even though we do our best to hedge against that risk through varies methods, but you must know this is not 100% risk free.
+Providing funding for traders carries risks, even though we do our best to hedge against that risk through varies methods, but you must know this is not 100% risk free. One **major source of risk** is the price discrepancy when supported exchanges go offline on their end, another would be the incorrect pricing data provided by said exchanges in the event of a catastrophic market crash.
+
+### Hedging risk
+
+We implement a proprietary algorithmic hedging strategy to protect potential downside risk by monitoring constantly the imbalances between overall long vs short positions, so that when a trading loss is realized on the trader's side, the funding provider's (pod manager) capital is over protected.
 
 ### Profit share
 
-Any profit made on your exchange account through our trading portal, excluding fees, is subject to a 30% split, you will keep 70% no matter what loss buffer or profit share you have in your pod policy.
+Any profit made on your exchange account through our trading portal, excluding fees, is subject to a 30%/70% split, you will keep 70% no matter what loss buffer or profit share you have in your pod policy.
 
 ### Trading fees
 
 Both trading fee and funding fee (if applicable) will be credited to your [levito.app](http://levito.app) balance once a trading session is settled.
+
+### Management
+
+As a funding provider (pod manager), you need to actively manage your pod (where your capital lives), whenever a trading session is complete and in accounting mode, you have to review it and generate a receipt by clicking on that specific session link in your pod history panel, you will also have to transfer funds between [levito.app](http://levito.app) and your exchange accounts in case needed.
+
+If this is a problem for you, you might want to consider [staking](/funding/staking), so that we can manage it for you.
 
 ### How to apply
 
